@@ -41,10 +41,10 @@ const NewEvents = () => {
                         </button>
                     </div>
 
-                    <div className="event-list">
+                    <div className="event-list p-3">
                         {dataEvent.map((item, index) => (
-                            <div className="flex justify-between gap-7 my-7" key={index}>
-                                <div className="w-full flex flex-col justify-center  bg-neutral-300 p-3">
+                            <div className="flex flex-col  md:flex md:flex-row justify-between gap-3 md:gap-7 my-3 md:my-7" key={index}>
+                                <div className="w-full flex flex-col justify-center  bg-neutral-300 p-3 order-last">
                                     <div className="flex gap-2 items-center mb-4">
                                         <IoCalendarOutline size={20} />
                                         <h1>{item.date}</h1>
@@ -52,7 +52,8 @@ const NewEvents = () => {
                                     <h1 className='text-xl font-semibold' >{item.title}</h1>
                                     <h2 className='mt-5' >{item.desc}</h2>
                                 </div>
-                                <div className='h-[200px] w-[300px]'>
+
+                                <div className=' h-full w-full md:w-[300px] '>
                                     <Image className='w-full h-full object-cover ' src={newEvent} alt='newevent' />
                                 </div>
                             </div>
