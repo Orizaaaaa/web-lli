@@ -12,6 +12,9 @@ const config: Config = {
         sans: ['var(--font-inter)'],
         mono: ['var(--font-roboto-mono)'],
       },
+      backgroundColor: {
+        primary: '#FE4D72',
+      }
     },
   },
   plugins: [],
