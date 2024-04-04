@@ -35,6 +35,16 @@ const Navbar = (props: Props) => {
     };
 
     useEffect(() => {
+        window.addEventListener('scroll', changeBackground);
+
+        return () => {
+            // Cleanup: remove the event listener when the component is unmounted
+            window.removeEventListener('scroll', changeBackground);
+        };
+    }, []);
+
+
+    useEffect(() => {
         const handleScroll = () => {
 
             const sections = document.querySelectorAll('section');
