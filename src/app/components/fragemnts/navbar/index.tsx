@@ -91,7 +91,7 @@ const Navbar = (props: Props) => {
                     className={` flex-col col-span-2 lg:col-span-2 w-full  px-2 lg:flex lg:w-auto lg:order-1  overflow-hidden ${mobileMenuOpen ? 'block' : 'hidden'}`}
                     id="mobile-menu-2"
                 >
-                    <ul className="flex  flex-col mt-4  p-3 lg:p-0 text-black font-medium lg:flex-row lg:space-x-8 lg:mt-0 w-full rounded-lg gap-1 lg:gap-0">
+                    <ul className="flex  flex-col mt-4   p-3 lg:p-0 text-black font-medium lg:flex-row lg:space-x-8 lg:mt-0 w-full rounded-lg gap-1 lg:gap-0">
                         {navigation.map((item, index) => (
                             <li key={index}>
                                 <Link className={`link  no-underline ${activeSection === item.location || pathname === item.location ? 'active ' : ''}`}
