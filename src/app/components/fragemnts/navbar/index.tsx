@@ -5,7 +5,7 @@ import ButtonPrimary from '../../elements/buttonPrimary';
 import { navigation } from '@/app/utils/dataObject';
 import { usePathname } from 'next/navigation';
 import './navbar.scss'
-import { logo1 } from '@/app/image';
+import { logo1, logo2 } from '@/app/image';
 import Image from 'next/image';
 
 type Props = {}
@@ -55,12 +55,12 @@ const Navbar = (props: Props) => {
         };
     }, []);
     return (
-        <nav className={`fixed top-0 left-0 py-2.5 w-full z-10 ${navbarBg ? 'navbarbgActive' : ''}`}>
-            <div className="container mx-auto flex flex-wrap items-center justify-between">
-                <div className="flex items-center gap-2">
-                    <Image className='portfolio-icon w-28' src={logo1} alt="portfolio-icon" />
+        <nav className={`fixed top-0 left-0 py-2.5 w-full z-10  ${navbarBg ? 'navbarbgActive' : ''}`}>
+            <div className="container mx-auto flex flex-wrap items-center justify-between ">
+                <div className="flex items-center justify-center">
+                    <Image className='portfolio-icon h-16 pr-4 border-r-2 border-gray-300' src={logo1} alt="logo1" />
+                    <Image className='portfolio-icon h-24 ml-4' src={logo2} alt="logo2" />
                 </div>
-
                 <div className="flex items-center justify-end lg:hidden">
                     <div className="hidden mt-2 mr-4 sm:inline-block">
                         <span />
