@@ -1,0 +1,153 @@
+// change background navbar
+.navbarbgActive {
+
+    background: rgba(211, 202, 202, 0.3);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: 0.4s;
+
+}
+
+nav {
+
+
+    // button close menu
+    .line {
+        fill: none;
+        stroke: #FE4D72;
+        stroke-width: 6;
+        transition: stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1),
+            stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .line1 {
+        stroke-dasharray: 60 207;
+        stroke-width: 6;
+    }
+
+    .line2 {
+        stroke-dasharray: 60 60;
+        stroke-width: 6;
+    }
+
+    .line3 {
+        stroke-dasharray: 60 207;
+        stroke-width: 6;
+    }
+
+    .opened .line1 {
+        stroke-dasharray: 90 207;
+        stroke-dashoffset: -134;
+        stroke-width: 6;
+    }
+
+    .opened .line2 {
+        stroke-dasharray: 1 60;
+        stroke-dashoffset: -30;
+        stroke-width: 6;
+    }
+
+    .opened .line3 {
+        stroke-dasharray: 90 207;
+        stroke-dashoffset: -134;
+        stroke-width: 6;
+    }
+
+    // button close menu end
+
+    .title-section {
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
+    .flex {
+        a img {
+            width: 40px;
+        }
+    }
+
+    .grid .flex {
+        .self-center {
+            .flex span:first-child {
+                color: var(--primary);
+            }
+        }
+    }
+
+    .grid .items-center ul li a:hover,
+    .grid .items-center ul li a.active {
+        color: var(--primary);
+        font-weight: 600;
+    }
+
+    .grid .items-center a:hover::after {
+        width: 100%;
+    }
+
+    .grid .items-center ul li a.active::after {
+        content: '';
+        display: block;
+        width: 100%;
+        height: 2px;
+        background: var(--primary);
+        transition: width .3s;
+    }
+
+    .grid .items-center ul li a::after {
+        content: '';
+        display: block;
+        width: 0;
+        height: 2px;
+        background: var(--primary);
+        transition: width .3s;
+    }
+
+    .flex {
+        .portfolio-icon {
+            width: 50px;
+            height: 50px;
+        }
+    }
+
+
+}
+
+@media screen and (max-width: 1256px) {
+    .flex {
+        .self-center .flex span:last-child {
+            display: none;
+
+        }
+    }
+}
+
+@media screen and (max-width: 1020px) {
+    .flex {
+        .self-center .flex span:last-child {
+            display: block;
+        }
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    nav {
+        background: rgba(211, 202, 202, 0.3);
+        backdrop-filter: blur(10px);
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        transition: 0.4s;
+
+        .grid .items-center ul {
+            background-color: var(--wallBg);
+        }
+    }
+}
+
+@media screen and (max-width: 434px) {
+    nav {
+        .flex {
+            .portfolio-icon {
+                display: none;
+            }
+        }
+    }
+}

@@ -1,15 +1,16 @@
 import React from 'react'
 
 type Props = {
-    name?: string
+    children?: React.ReactNode
     onClick?: () => void
     className?: string
+    type?: 'string'
 }
 
-const ButtonPrimary = ({ name, onClick, className }: Props) => {
+const ButtonPrimary = ({ children, onClick, className }: Props) => {
     return (
-        <button className={`bg-primary px-4 py-2 text-white  ${className}`} onClick={onClick} >
-            {name}
+        <button className={`bg-primary px-4 py-2 text-white  ${className}`} onClick={onClick}  >
+            {children}
         </button >
     )
 }
