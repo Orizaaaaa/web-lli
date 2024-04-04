@@ -1,11 +1,11 @@
 import ButtonPrimary from "./components/elements/buttonPrimary";
-import Header from "./organism/header";
+import Home from "./organism/home";
 
 
 export default function LandingPage() {
   return (
     <main>
-      <Header />
+      <Home />
     </main>
   );
 }

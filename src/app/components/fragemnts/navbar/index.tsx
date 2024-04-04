@@ -5,6 +5,8 @@ import ButtonPrimary from '../../elements/buttonPrimary';
 import { navigation } from '@/app/utils/dataObject';
 import { usePathname } from 'next/navigation';
 import './navbar.scss'
+import { logo1 } from '@/app/image';
+import Image from 'next/image';
 
 type Props = {}
 
@@ -54,24 +56,15 @@ const Navbar = (props: Props) => {
     }, []);
     return (
         <nav className={`fixed top-0 left-0 py-2.5 w-full z-10 ${navbarBg ? 'navbarbgActive' : ''}`}>
-            <div className="grid grid-cols-2 lg:grid-cols-4 flex-wrap items-center justify-between  px-3 mx-auto ">
+            <div className="container mx-auto flex flex-wrap items-center justify-between">
                 <div className="flex items-center gap-2">
-                    {/* <Image className='portfolio-icon' src={image_porto2} alt="portfolio-icon" /> */}
-                    <span className="self-center text-sm font-semibold whitespace-nowrap dark:text-white">
-                        <div className="flex flex-col">
-                            <span className='text-black' > PORTOFOLIO</span>
-                            <span className=' top-0 text-sm text-black ' > Informatics Student | Front End Developer</span>
-                        </div>
-                    </span>
+                    <Image className='portfolio-icon w-28' src={logo1} alt="portfolio-icon" />
                 </div>
 
-                <div className="flex items-center justify-end lg:order-2">
+                <div className="flex items-center justify-end lg:hidden">
                     <div className="hidden mt-2 mr-4 sm:inline-block">
                         <span />
                     </div>
-                    <ButtonPrimary type="string" className='items-center justify-center font-medium gap-2  px-4 py-2 rounded-md hidden lg:block '>
-                        Download my CV
-                    </ButtonPrimary>
 
                     <button
                         onClick={toggleMobileMenu}
@@ -95,7 +88,7 @@ const Navbar = (props: Props) => {
                 </div>
 
                 <div
-                    className={`items-center flex-col col-span-2 lg:col-span-2 w-full  justify-between px-2 mx-auto lg:flex lg:w-auto lg:order-1  overflow-hidden ${mobileMenuOpen ? 'block' : 'hidden'}`}
+                    className={` flex-col col-span-2 lg:col-span-2 w-full  px-2 lg:flex lg:w-auto lg:order-1  overflow-hidden ${mobileMenuOpen ? 'block' : 'hidden'}`}
                     id="mobile-menu-2"
                 >
                     <ul className="flex  flex-col mt-4  p-3 lg:p-0 text-black font-medium lg:flex-row lg:space-x-8 lg:mt-0 w-full rounded-lg gap-1 lg:gap-0">

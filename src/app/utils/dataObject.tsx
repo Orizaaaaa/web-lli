@@ -1,27 +1,20 @@
 export const navigation = [
     {
-        title: 'Home',
+        title: 'Beranda',
         location: 'home'
     },
     {
-        title: 'About',
+        title: 'Berita',
         location: 'aboutMe'
     },
     {
-        title: 'Skills',
+        title: 'Acara',
         location: 'my-skill'
     },
     {
-        title: 'Education',
+        title: 'Galeri',
         location: 'educations'
     },
-    {
-        title: 'Experience',
-        location: 'experiences'
-    },
-    {
-        title: 'Portfolio',
-        location: '/portfolio'
-    },
+
 
 ]

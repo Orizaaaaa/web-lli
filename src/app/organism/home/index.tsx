@@ -3,9 +3,9 @@ import React from 'react'
 
 type Props = {}
 
-const Header = () => {
+const Home = () => {
     return (
-        <div className="intro">
+        <section className="home" id='home'>
             <div className="container mx-auto ">
                 <Navbar />
                 <p className='mt-14' > Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga voluptas sapiente dolores numquam obcaecati beatae. Fugiat odit ex sapiente unde? Architecto quo nam esse deserunt hic quibusdam dicta nobis. Maiores!
@@ -17,8 +17,8 @@ const Header = () => {
                     Modi quis commodi distinctio nobis excepturi assumenda, vero eligendi aperiam praesentium, incidunt dolorem et reiciendis ut minima expedita ducimus fugit dolor sequi sint pariatur alias accusantium! Autem aut omnis quia?</p>
 
             </div>
-        </div>
+        </section>
     )
 }
 
-export default Header
+export default Home
