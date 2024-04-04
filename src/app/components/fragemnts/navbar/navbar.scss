@@ -66,17 +66,11 @@ nav {
         }
     }
 
-    .grid .flex {
-        .self-center {
-            .flex span:first-child {
-                color: var(--primary);
-            }
-        }
-    }
+
 
     .grid .items-center ul li a:hover,
     .grid .items-center ul li a.active {
-        color: var(--primary);
+        color: red;
         font-weight: 600;
     }
 
@@ -89,7 +83,7 @@ nav {
         display: block;
         width: 100%;
         height: 2px;
-        background: var(--primary);
+        background: red;
         transition: width .3s;
     }
 
@@ -98,7 +92,7 @@ nav {
         display: block;
         width: 0;
         height: 2px;
-        background: var(--primary);
+        background: red;
         transition: width .3s;
     }
 
@@ -137,7 +131,7 @@ nav {
         transition: 0.4s;
 
         .grid .items-center ul {
-            background-color: var(--wallBg);
+            background-color: red;
         }
     }
 }

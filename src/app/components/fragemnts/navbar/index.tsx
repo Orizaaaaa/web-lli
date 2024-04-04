@@ -14,6 +14,7 @@ const Navbar = (props: Props) => {
     const [activeSection, setActiveSection] = useState('home');
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
+
     const toggleMobileMenu = () => {
         setMobileMenuOpen(!mobileMenuOpen);
     };
@@ -52,14 +53,14 @@ const Navbar = (props: Props) => {
         };
     }, []);
     return (
-        <nav className={`fixed top-0 left-0 py-2.5 w-full z-10    ${navbarBg ? 'navbarbgActive' : ''}`}>
+        <nav className={`fixed top-0 left-0 py-2.5 w-full z-10 ${navbarBg ? 'navbarbgActive' : ''}`}>
             <div className="grid grid-cols-2 lg:grid-cols-4 flex-wrap items-center justify-between  px-3 mx-auto ">
                 <div className="flex items-center gap-2">
                     {/* <Image className='portfolio-icon' src={image_porto2} alt="portfolio-icon" /> */}
                     <span className="self-center text-sm font-semibold whitespace-nowrap dark:text-white">
                         <div className="flex flex-col">
-                            <span> PORTOFOLIO</span>
-                            <span className=' top-0 text-sm font-light ' > Informatics Student | Front End Developer</span>
+                            <span className='text-black' > PORTOFOLIO</span>
+                            <span className=' top-0 text-sm text-black ' > Informatics Student | Front End Developer</span>
                         </div>
                     </span>
                 </div>
@@ -68,7 +69,7 @@ const Navbar = (props: Props) => {
                     <div className="hidden mt-2 mr-4 sm:inline-block">
                         <span />
                     </div>
-                    <ButtonPrimary type="string" className='items-center justify-center font-medium gap-2  px-4 py-2 rounded-md hidden lg:block lg:flex'>
+                    <ButtonPrimary type="string" className='items-center justify-center font-medium gap-2  px-4 py-2 rounded-md hidden lg:block '>
                         Download my CV
                     </ButtonPrimary>
 
