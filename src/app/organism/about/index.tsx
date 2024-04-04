@@ -3,6 +3,8 @@ import { IoLocationOutline } from "react-icons/io5";
 import { MdOutlineMail } from "react-icons/md";
 import { FaWhatsapp } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
+import Image from 'next/image';
+import { bigLogo } from '@/app/image';
 const About = () => {
     const informationData = [
         {
@@ -51,7 +53,9 @@ const About = () => {
                         ))}
                     </div>
                 </div>
+
             </div>
+
 
         </section>
     )
