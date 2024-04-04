@@ -30,7 +30,7 @@ const About = () => {
     ]
     return (
         <section className="about bg-primary">
-            <div className="container mx-auto py-10">
+            <div className="container mx-auto py-10 px-3 md:px-0">
                 <h1 className='my-7 text-white text-3xl font-medium' >Tentang Kami</h1>
                 <h2 className='text-white' >Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,</h2>
                 <div className="grid grid-cols-2 mt-7">
@@ -38,7 +38,7 @@ const About = () => {
                         {informationData.map((item, index) => (
                             <div className="flex justify-start items-center gap-2 text-white" key={index}>
                                 {item.icon}
-                                <p>{item.text}</p>
+                                <p className=' text-sm md:text-base' >{item.text}</p>
                             </div>
                         ))}
                     </div>
@@ -46,7 +46,7 @@ const About = () => {
                         {followMeData.map((item, index) => (
                             <div className="flex justify-start items-center gap-2 text-white" key={index}>
                                 {item.icon}
-                                <p>{item.text}</p>
+                                <p className='text-sm md:text-base' >{item.text}</p>
                             </div>
                         ))}
                     </div>
