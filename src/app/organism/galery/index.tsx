@@ -39,7 +39,7 @@ const Galery = () => {
                 </div>
                 <div className="hero-2">
                     <div className="list-galery">
-                        <div className="grid grid-cols-3 gap-3">
+                        <div className="grid grid-cols-2 md:grid-cols-3 gap-2 md:gap-3 p-2 md:p-0">
                             {datalistGalery.map((item, index) => (
                                 <Image key={index} className='object-cover h-full w-full' src={item.image} alt='galery' />
                             ))}
