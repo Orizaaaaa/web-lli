@@ -10,7 +10,7 @@ const Footer = () => {
                 <Image className='m-10' src={bigLogo} alt="logo" />
             </div>
             <div className="copy-right flex justify-center items-center bg-primary p-4">
-                <p className='text-white' >© 2024 Lembaga Lansia Indonesia Jawa Barat. All rights reserved.</p>
+                <p className='text-white text-sm md:text-base ' >© 2024 Lembaga Lansia Indonesia Jawa Barat. All rights reserved.</p>
             </div>
         </section>
     )
