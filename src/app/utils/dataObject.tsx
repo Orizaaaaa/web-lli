@@ -5,15 +5,19 @@ export const navigation = [
     },
     {
         title: 'Berita',
-        location: 'aboutMe'
+        location: 'news'
     },
     {
         title: 'Acara',
-        location: 'my-skill'
+        location: 'new-event'
     },
     {
         title: 'Galeri',
-        location: 'educations'
+        location: 'galery'
+    },
+    {
+        title: 'Tentang Kami',
+        location: 'footer'
     },
 
 

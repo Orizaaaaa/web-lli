@@ -26,7 +26,7 @@ const Galery = () => {
         },
     ]
     return (
-        <section className="galery mb-24">
+        <section className="galery mb-24" id='galery'>
             <div className="container mx-auto">
                 <div className="hero-1 mb-4">
                     <div className="flex justify-between border-b-2 border-gray-300 py-5 mb-4">

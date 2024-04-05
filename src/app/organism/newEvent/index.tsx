@@ -30,7 +30,7 @@ const NewEvents = () => {
     ]
 
     return (
-        <section className="new-events">
+        <section className="new-events" id='new-event'>
             <div className="container mx-auto">
                 <div className="hero-1 mb-4">
                     <div className="flex justify-between border-b-2 border-gray-300 py-5 mb-4">

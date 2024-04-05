@@ -5,7 +5,7 @@ import React from 'react'
 
 const Footer = () => {
     return (
-        <section className="footer">
+        <section className="footer" id='footer'>
             <div className="container mx-auto flex justify-center items-center">
                 <Image className='m-10' src={bigLogo} alt="logo" />
             </div>

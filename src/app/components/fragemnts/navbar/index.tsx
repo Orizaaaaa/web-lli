@@ -64,6 +64,9 @@ const Navbar = (props: Props) => {
             window.removeEventListener('scroll', handleScroll);
         };
     }, []);
+
+    console.log(activeSection)
+
     return (
         <nav className={`fixed top-0 left-0 py-2.5 w-full z-10  ${navbarBg ? 'navbarbgActive shadow-xl' : ''}`}>
             <div className="container mx-auto flex flex-wrap items-center justify-between ">
@@ -104,7 +107,7 @@ const Navbar = (props: Props) => {
                     <ul className="flex  flex-col mt-4   p-3 lg:p-0 text-black font-medium lg:flex-row lg:space-x-8 lg:mt-0 w-full rounded-lg gap-1 lg:gap-0">
                         {navigation.map((item, index) => (
                             <li key={index}>
-                                <Link className={`link  no-underline ${activeSection === item.location || pathname === item.location ? 'active ' : ''}`}
+                                <Link className={`link  no-underline ${activeSection === item.location || pathname === item.location ? 'active' : ''}`}
 
                                     href={item.location !== '/portfolio' ? `/#${item.location}` : item.location}>
                                     {item.title}
