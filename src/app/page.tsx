@@ -1,5 +1,6 @@
 import ButtonPrimary from "./components/elements/buttonPrimary";
 import About from "./organism/about";
+import Footer from "./organism/footer";
 import Galery from "./organism/galery";
 import Home from "./organism/home";
 import NewEvents from "./organism/newEvent";
@@ -14,6 +15,7 @@ export default function LandingPage() {
       <NewEvents />
       <Galery />
       <About />
+      <Footer />
     </main>
   );
 }
