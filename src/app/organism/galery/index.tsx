@@ -1,3 +1,4 @@
+import Title from '@/app/components/fragemnts/title'
 import { galeri1, galeri2, galeri3 } from '@/app/image'
 import Image from 'next/image'
 import React from 'react'
@@ -29,13 +30,7 @@ const Galery = () => {
         <section className="galery mb-24" id='galery'>
             <div className="container mx-auto">
                 <div className="hero-1 mb-4">
-                    <div className="flex justify-between border-b-2 border-gray-300 py-5 mb-4">
-                        <h1 className='font-bold text-xl md:text-2xl' >Galeri</h1>
-                        <button className="flex justify-center items-center gap-2">
-                            <h2 className='font-medium text-xl md:text-2xl' >All</h2>
-                            <FaArrowRight size={20} />
-                        </button>
-                    </div>
+                    <Title title={'Galeri'} location={'#galery'} />
                 </div>
                 <div className="hero-2">
                     <div className="list-galery">

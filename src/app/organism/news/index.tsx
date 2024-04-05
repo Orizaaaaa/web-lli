@@ -1,4 +1,5 @@
 import ButtonPrimary from '@/app/components/elements/buttonPrimary';
+import Title from '@/app/components/fragemnts/title';
 import { image1, image2, image3, news1 } from '@/app/image';
 import Image from 'next/image';
 import React from 'react'
@@ -25,13 +26,7 @@ const News = () => {
 
                 {/* hero1 */}
                 <div className="hero-1">
-                    <div className="flex justify-between border-b-2 border-gray-300 py-5">
-                        <h1 className='font-bold text-xl md:text-2xl' >Berita Terbaru</h1>
-                        <button className="flex justify-center items-center gap-2">
-                            <h2 className='font-medium text-xl md:text-2xl' >All</h2>
-                            <FaArrowRight size={20} />
-                        </button>
-                    </div>
+                    <Title title={'Berita Terbaru'} location={'#news'} />
                 </div>
 
                 {/* hero2 */}

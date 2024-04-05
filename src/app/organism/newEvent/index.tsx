@@ -1,3 +1,4 @@
+import Title from '@/app/components/fragemnts/title';
 import { newEvent } from '@/app/image'
 import Image from 'next/image'
 import React from 'react'
@@ -33,13 +34,7 @@ const NewEvents = () => {
         <section className="new-events" id='new-event'>
             <div className="container mx-auto">
                 <div className="hero-1 mb-4">
-                    <div className="flex justify-between border-b-2 border-gray-300 py-5 mb-4">
-                        <h1 className='font-bold text-xl md:text-2xl' >Acara Terbaru</h1>
-                        <button className="flex justify-center items-center gap-2">
-                            <h2 className='font-medium text-xl md:text-2xl' >All</h2>
-                            <FaArrowRight size={20} />
-                        </button>
-                    </div>
+                    <Title title={'Acara Terbaru'} location={'#news'} />
 
                     <div className="event-list p-3">
                         {dataEvent.map((item, index) => (
