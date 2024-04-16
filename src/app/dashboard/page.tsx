@@ -1,3 +1,4 @@
+"use client"
 import React from "react";
 import ChartOne from "@/components/fragemnts/Charts/ChartOne";
 import ChartThree from "@/components/fragemnts/Charts/ChartThree";
