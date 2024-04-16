@@ -1,5 +1,4 @@
-"use client"
-
+'use client'
 import { useEffect, useState } from "react";
 
 type SetValue<T> = T | ((val: T) => T);
@@ -14,9 +13,9 @@ function useLocalStorage<T>(
     try {
       // Check if window is defined (only available in browser)
       if (typeof window !== "undefined") {
-        // const item = window.localStorage.getItem(key);
+        const item = window.localStorage.getItem(key);
         // Parse stored json or if none return initialValue
-        // return item ? JSON.parse(item) : initialValue;
+        return item ? JSON.parse(item) : initialValue;
       }
     } catch (error) {
       // If error, return initialValue
@@ -35,7 +34,7 @@ function useLocalStorage<T>(
           : storedValue;
       // Save state
       if (typeof window !== "undefined") {
-        // window.localStorage.setItem(key, JSON.stringify(valueToStore));
+        window.localStorage.setItem(key, JSON.stringify(valueToStore));
       }
     } catch (error) {
       console.log(error);
@@ -46,5 +45,3 @@ function useLocalStorage<T>(
 }
 
 export default useLocalStorage;
-
-
