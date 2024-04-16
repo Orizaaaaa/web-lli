@@ -29,7 +29,7 @@ const About = () => {
         },
     ]
     return (
-        <section className="about bg-primary" id='footer'>
+        <section className="about bg-primaryred" id='footer'>
             <div className="container mx-auto py-10 px-3 md:px-0">
                 <h1 className='my-7 text-white text-3xl font-medium' >Tentang Kami</h1>
                 <h2 className='text-white' >Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,</h2>

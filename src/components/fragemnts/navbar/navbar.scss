@@ -59,7 +59,7 @@ nav {
 
     .flex ul li a:hover,
     .flex ul li a.active {
-        color: red;
+        color: #FE4D72;
         font-weight: 600;
     }
 
@@ -72,7 +72,7 @@ nav {
         display: block;
         width: 100%;
         height: 2px;
-        background: red;
+        background: #FE4D72;
         transition: width .3s;
     }
 
@@ -81,7 +81,7 @@ nav {
         display: block;
         width: 0;
         height: 2px;
-        background: red;
+        background: #FE4D72;
         transition: width .3s;
     }
 

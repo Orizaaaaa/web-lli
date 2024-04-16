@@ -9,7 +9,7 @@ const Footer = () => {
             <div className="container mx-auto flex justify-center items-center">
                 <Image className='m-10' src={bigLogo} alt="logo" />
             </div>
-            <div className="copy-right flex justify-center items-center bg-primary p-4">
+            <div className="copy-right flex justify-center items-center bg-primaryred p-4">
                 <p className='text-white text-sm md:text-base ' >© 2024 Lembaga Lansia Indonesia Jawa Barat. All rights reserved.</p>
             </div>
         </section>

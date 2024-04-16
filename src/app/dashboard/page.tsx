@@ -5,7 +5,6 @@ import ChartTwo from "@/components/fragemnts/Charts/ChartTwo";
 import ChatCard from "@/components/fragemnts/Chat/ChatCard";
 import TableOne from "@/components/fragemnts/Tables/TableOne";
 import CardDataStats from "@/components/fragemnts/CardDataStats";
-import MapOne from "@/components/fragemnts/Maps/MapOne";
 import DefaultLayout from "@/components/layouts/DefaultLayout";
 
 const Dashboard: React.FC = () => {
@@ -102,7 +101,7 @@ const Dashboard: React.FC = () => {
                 <ChartOne />
                 <ChartTwo />
                 <ChartThree />
-                <MapOne />
+
                 <div className="col-span-12 xl:col-span-8">
                     <TableOne />
                 </div>
