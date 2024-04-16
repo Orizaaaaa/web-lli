@@ -1,7 +1,8 @@
-import useColorMode from "@/hooks/useColorMode";
+'use client';
+import { useState } from "react";
 
 const DarkModeSwitcher = () => {
-  const [colorMode, setColorMode] = useColorMode();
+  const [colorMode, setColorMode] = useState("light");
 
   return (
     <li>
