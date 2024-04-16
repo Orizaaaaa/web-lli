@@ -34,36 +34,36 @@ const Navbar = (props: Props) => {
         }
     };
 
-    // useEffect(() => {
-    //     window.addEventListener('scroll', changeBackground);
+    useEffect(() => {
+        window.addEventListener('scroll', changeBackground);
 
-    //     return () => {
-    //         // Cleanup: remove the event listener when the component is unmounted
-    //         window.removeEventListener('scroll', changeBackground);
-    //     };
-    // }, []);
+        return () => {
+            // Cleanup: remove the event listener when the component is unmounted
+            window.removeEventListener('scroll', changeBackground);
+        };
+    }, []);
 
 
-    // useEffect(() => {
-    //     const handleScroll = () => {
+    useEffect(() => {
+        const handleScroll = () => {
 
-    //         const sections = document.querySelectorAll('section');
+            const sections = document.querySelectorAll('section');
 
-    //         sections.forEach(section => {
-    //             const rect = section.getBoundingClientRect();
+            sections.forEach(section => {
+                const rect = section.getBoundingClientRect();
 
-    //             if (rect.top <= 330 && rect.bottom >= 330) {
-    //                 setActiveSection(section.id);
-    //             }
-    //         });
-    //     };
+                if (rect.top <= 330 && rect.bottom >= 330) {
+                    setActiveSection(section.id);
+                }
+            });
+        };
 
-    //     window.addEventListener('scroll', handleScroll);
+        window.addEventListener('scroll', handleScroll);
 
-    //     return () => {
-    //         window.removeEventListener('scroll', handleScroll);
-    //     };
-    // }, []);
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, []);
 
 
     return (
