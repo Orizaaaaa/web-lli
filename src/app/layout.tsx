@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
-import "../app/css/globals.css";
-import { inter } from "./utils/font";
+import "../css/globals.css";
+import { inter } from "../utils/font";
 
 
 export const metadata: Metadata = {

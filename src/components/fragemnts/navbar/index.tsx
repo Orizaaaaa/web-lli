@@ -2,7 +2,7 @@
 import Link from 'next/link';
 import React, { useEffect, useState } from 'react'
 import ButtonPrimary from '../../elements/buttonPrimary';
-import { navigation } from '@/app/utils/dataObject';
+import { navigation } from '@/utils/dataObject';
 import { usePathname } from 'next/navigation';
 import './navbar.scss'
 import { logo1, logo2 } from '@/app/image';

@@ -1,4 +1,4 @@
-import Title from '@/app/components/fragemnts/title';
+import Title from '@/components/fragemnts/title'
 import { newEvent } from '@/app/image'
 import Image from 'next/image'
 import React from 'react'

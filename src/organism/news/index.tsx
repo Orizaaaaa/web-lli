@@ -1,5 +1,5 @@
-import ButtonPrimary from '@/app/components/elements/buttonPrimary';
-import Title from '@/app/components/fragemnts/title';
+import ButtonPrimary from '@/components/elements/buttonPrimary';
+import Title from '@/components/fragemnts/title'
 import { image1, image2, image3, news1 } from '@/app/image';
 import Image from 'next/image';
 import React from 'react'

@@ -1,8 +1,7 @@
-import Navbar from '@/app/components/fragemnts/navbar'
-import { home_hero1, logo1 } from '@/app/image'
+import Navbar from '@/components/fragemnts/navbar'
 import './home.scss'
 import React from 'react'
-import ButtonPrimary from '@/app/components/elements/buttonPrimary'
+import ButtonPrimary from '@/components/elements/buttonPrimary'
 
 
 const Home = () => {

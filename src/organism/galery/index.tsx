@@ -1,8 +1,7 @@
-import Title from '@/app/components/fragemnts/title'
+import Title from '@/components/fragemnts/title'
 import { galeri1, galeri2, galeri3 } from '@/app/image'
 import Image from 'next/image'
 import React from 'react'
-import { FaArrowRight } from 'react-icons/fa6'
 
 
 const Galery = () => {
