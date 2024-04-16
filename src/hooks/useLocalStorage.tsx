@@ -35,7 +35,7 @@ function useLocalStorage<T>(
           : storedValue;
       // Save state
       if (typeof window !== "undefined") {
-        window && window.localStorage.setItem(key, JSON.stringify(valueToStore));
+        window.localStorage.setItem(key, JSON.stringify(valueToStore));
       }
     } catch (error) {
       console.log(error);
@@ -46,3 +46,4 @@ function useLocalStorage<T>(
 }
 
 export default useLocalStorage;
+
