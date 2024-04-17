@@ -10,7 +10,8 @@ import galeri1 from '../assets/galeri1 .svg'
 import galeri2 from '../assets/galeri2.svg'
 import galeri3 from '../assets/galeri3.svg'
 import bigLogo from '../assets/bigLogo.svg'
+import human1 from '../assets/human1.svg'
 
 export {
-    logo1, logo2, home_hero1, news1, image1, image2, image3, newEvent, galeri1, galeri2, galeri3, bigLogo
+    logo1, logo2, home_hero1, news1, image1, image2, image3, newEvent, galeri1, galeri2, galeri3, bigLogo, human1
 }

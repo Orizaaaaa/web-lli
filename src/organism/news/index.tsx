@@ -25,7 +25,7 @@ const News = () => {
 
                 {/* hero1 */}
                 <div className="hero-1">
-                    <Title title={'Berita Terbaru'} location={'#news'} />
+                    <Title title={'Berita Terbaru'} location={'/allnews'} />
                 </div>
 
                 {/* hero2 */}
