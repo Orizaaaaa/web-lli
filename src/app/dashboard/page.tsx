@@ -3,9 +3,12 @@ import React, { useEffect, useState } from "react";
 import CardDataStats from "@/components/fragemnts/CardDataStats";
 import DefaultLayout from "@/components/layouts/DefaultLayout";
 import { cardStats } from "@/utils/dataObject";
+import { useSelector } from "react-redux";
 
 
 const Dashboard: React.FC = () => {
+    const mode = useSelector((state: any) => state.darkMode.color);
+    console.log(mode);
 
     return (
         <DefaultLayout>
@@ -20,8 +23,6 @@ const Dashboard: React.FC = () => {
             <div className="mt-4 grid grid-cols-12 gap-4 md:mt-6 md:gap-6 2xl:mt-7.5 2xl:gap-7.5">
                 {/* <ChatCard /> */}
             </div>
-
-
 
         </DefaultLayout>
     );

@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "../css/globals.css";
 import { inter } from "../utils/font";
+import { ReduxProvider } from "@/redux/provider";
 
 
 export const metadata: Metadata = {
@@ -14,12 +15,14 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={`${inter.className}`}>
-        <div className="dark:bg-boxdark-2 dark:text-bodydark">
-          {children}
-        </div>
-      </body>
-    </html>
+    <ReduxProvider>
+      <html lang="en">
+        <body className={`${inter.className}`}>
+          <div className="dark:bg-boxdark-2 dark:text-bodydark">
+            {children}
+          </div>
+        </body>
+      </html>
+    </ReduxProvider>
   );
 }
