@@ -6,6 +6,8 @@ import Image from 'next/image';
 import { image1, image2, image3, logo1, logo2, news1 } from '../image';
 import Title from '@/components/fragemnts/title';
 import ButtonPrimary from '@/components/elements/buttonPrimary';
+import About from '@/organism/about';
+import Footer from '@/organism/footer';
 
 
 const AllNews = () => {
@@ -76,6 +78,9 @@ const AllNews = () => {
                     </div>
                 </div>
             </section>
+
+            <About />
+            <Footer />
 
         </>
     )
