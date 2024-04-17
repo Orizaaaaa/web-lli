@@ -59,9 +59,11 @@ const Navbar = (props: Props) => {
         };
 
         window.addEventListener('scroll', handleScroll);
+        console.log(window);
 
         return () => {
             window.removeEventListener('scroll', handleScroll);
+
         };
     }, []);
 
