@@ -1,21 +1,6 @@
 'use client'
-import { useEffect, useState } from "react";
+
 import { IoEyeOutline } from "react-icons/io5";
-
-const useColorMode = () => {
-    const [color, setColor] = useState('')
-
-    useEffect(() => {
-        const data = localStorage.getItem('color-theme');
-        if (data === 'light') {
-            setColor('light')
-        } else {
-            setColor('dark')
-        }
-    }, [localStorage.getItem('color-theme')]);
-
-    return (color);
-}
 
 
 export const navigation = [
