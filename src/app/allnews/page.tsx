@@ -9,9 +9,9 @@ import { logo1, logo2 } from '../image';
 const AllNews = () => {
     return (
         <section className="home" id='home'>
-            <div className="flex justify-center items-center m-5 gap-5">
-                <Image className='w-32 border-r-2 border-gray pr-4' src={logo1} alt="logo" />
-                <Image className='w-13' src={logo2} alt="logo" />
+            <div className="flex justify-center items-center m-3 md:m-5 gap-5">
+                <Image className='md:w-32 w-24  border-r-2 border-gray pr-4' src={logo1} alt="logo" />
+                <Image className='md:w-13 w-9' src={logo2} alt="logo" />
             </div>
             <div className="hero1 ">
                 <div className="container mx-auto min-h-[50vh]  flex flex-col justify-center  ">
