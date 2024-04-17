@@ -3,7 +3,6 @@ import Title from '@/components/fragemnts/title'
 import { image1, image2, image3, news1 } from '@/app/image';
 import Image from 'next/image';
 import React from 'react'
-import { FaArrowRight } from "react-icons/fa6";
 
 const News = () => {
     const datahero3 = [
