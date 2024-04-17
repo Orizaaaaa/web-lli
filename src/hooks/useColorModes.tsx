@@ -10,7 +10,6 @@ const useColorMode = () => {
 
         if (typeof window !== 'undefined') {
             const bodyClass = window.document.body.classList;
-            console.log(window.document.body.classList);
 
             colorMode === "dark"
                 ? bodyClass.add(className)
