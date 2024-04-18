@@ -119,8 +119,8 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen }: SidebarProps) => {
               <NavigationList icon={<RxDashboard size={19} />} title="Dasboard" pathname="/" />
 
 
-              {/* <!-- Menu Item Calendar --> */}
-              <NavigationList icon={<IoCalendarOutline size={19} />} title="Calendar" pathname="/calendar" />
+              {/* <!-- Menu Item Calendar -->
+              <NavigationList icon={<IoCalendarOutline size={19} />} title="Calendar" pathname="/calendar" /> */}
 
 
               {/* <!-- Menu Item Profile --> */}
@@ -201,7 +201,7 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen }: SidebarProps) => {
 
 
               {/* <!-- Menu Item Tables --> */}
-              <NavigationList icon={<MdOutlineTableChart size={19} />} title=" Tables" pathname="/tables" />
+              {/* <NavigationList icon={<MdOutlineTableChart size={19} />} title=" Tables" pathname="/tables" /> */}
 
 
               {/* <!-- Menu Item Settings --> */}
