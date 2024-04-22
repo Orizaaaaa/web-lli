@@ -1,5 +1,4 @@
-
-import NotesPicker from '@/components/fragemnts/Tiptap/NotePicker'
+import TextEditor from '@/components/fragemnts/TextEditor/TextEditor'
 import DefaultLayout from '@/components/layouts/DefaultLayout'
 import React from 'react'
 
@@ -32,9 +31,11 @@ const CreateArticle = (props: Props) => {
                     <input className=" bg-slate-300 justify-between items-center py-3 px-2 w-full rounded-md cursor-pointer text-slate-500 " type="file" />
                 </div>
 
+                <div className="flex justify-between border-b-2 border-gray-300 py-3 my-10 md:mx-0">
+                    <h1 className='font-bold text-xl md:text-2xl' >Deskripsi</h1>
+                </div>
 
-                <NotesPicker />
-
+                <TextEditor />
             </section>
         </DefaultLayout >
     )
