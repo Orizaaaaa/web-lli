@@ -10,6 +10,7 @@ import { IoCalendarOutline, IoPersonOutline, IoSettingsOutline } from "react-ico
 import { MdOutlineTableChart } from "react-icons/md";
 import { GrArticle } from "react-icons/gr";
 import { RxDashboard } from "react-icons/rx";
+import { FaFilePen } from "react-icons/fa6";
 
 interface SidebarProps {
   sidebarOpen: boolean;
@@ -117,6 +118,8 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen }: SidebarProps) => {
             <ul className="mb-6 flex flex-col gap-1.5">
               {/* <!-- Menu Item Dashboard --> */}
               <NavigationList icon={<RxDashboard size={19} />} title="Dasboard" pathname="/dashboard" />
+              <NavigationList icon={<GrArticle size={19} />} title="All Article" pathname="/all_news_admin" />
+              <NavigationList icon={<FaFilePen size={19} />} title="Create Article" pathname="/create_articles" />
 
 
               {/* <!-- Menu Item Calendar -->
@@ -124,11 +127,11 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen }: SidebarProps) => {
 
 
               {/* <!-- Menu Item Profile --> */}
-              <NavigationList icon={<IoPersonOutline size={19} />} title=" Profile" pathname="/profile" />
+              {/* <NavigationList icon={<IoPersonOutline size={19} />} title=" Profile" pathname="/profile" /> */}
 
 
-              {/* <!-- Menu Item Articles --> */}
-              <SidebarLinkGroup
+              {/* <!-- Dropdown Menu Start --> */}
+              {/* <SidebarLinkGroup
                 activeCondition={
                   pathname === "/forms" || pathname.includes("forms")
                 }
@@ -165,7 +168,7 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen }: SidebarProps) => {
                         </svg>
                       </Link>
 
-                      {/* <!-- Dropdown Menu Start --> */}
+
                       <div
                         className={`translate transform overflow-hidden ${!open && "hidden"
                           }`}
@@ -193,11 +196,10 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen }: SidebarProps) => {
                           </li>
                         </ul>
                       </div>
-                      {/* <!-- Dropdown Menu End --> */}
                     </React.Fragment>
                   );
                 }}
-              </SidebarLinkGroup>
+              </SidebarLinkGroup> */}
 
 
               {/* <!-- Menu Item Tables --> */}
@@ -205,7 +207,7 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen }: SidebarProps) => {
 
 
               {/* <!-- Menu Item Settings --> */}
-              <NavigationList icon={<IoSettingsOutline size={19} />} title="Settings" pathname="/settings" />
+              {/* <NavigationList icon={<IoSettingsOutline size={19} />} title="Settings" pathname="/settings" /> */}
 
 
             </ul>

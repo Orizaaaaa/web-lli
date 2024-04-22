@@ -2,7 +2,7 @@ import React from 'react'
 import { image1, image2, image3 } from '../image'
 import Image from 'next/image'
 import DefaultLayout from '@/components/layouts/DefaultLayout'
-
+import { BsThreeDots } from "react-icons/bs";
 
 
 const AllNewsAdmin = () => {
@@ -30,10 +30,14 @@ const AllNewsAdmin = () => {
                     {/* hero 2 bottom*/}
                     <div className="grid grid-cols-2 sm:grid-cols-3 gap-3 mt-8">
                         {datahero3.map((item, index) => (
-                            <div key={index}>
+                            <div className='shadow-6 p-2 rounded-md' key={index}>
                                 <Image className='w-full rounded-md' src={item.image} alt='news_btm' />
                                 <p className='text-sm md:text-base' >{item.title}</p>
+                                <button className='flex justify-end w-full' >
+                                    <BsThreeDots size={25} />
+                                </button>
                             </div>
+
                         ))}
                     </div>
                 </div>
