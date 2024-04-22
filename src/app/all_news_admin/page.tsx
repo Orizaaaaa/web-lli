@@ -65,15 +65,19 @@ const AllNewsAdmin = () => {
                                         <button className='update bg-black rounded-md py-1 px-2 text-white'>
                                             Detail
                                         </button>
-                                        <button className='update bg-red rounded-md py-1 px-2 text-white'>
+
+                                        <button className='update bg-red rounded-md py-1 px-2 text-white' onClick={openModal}>
                                             Delete
                                         </button>
                                     </div>
 
-                                    {/* modal */}
+                                    {/* modal  delete*/}
                                     <Modal isOpen={modalIsOpen} >
-                                        <p>Isi dari modal</p>
-                                        <button className='bg-red' onClick={closeModal} >close</button>
+                                        <p>Apakah anda yakin akan menghapus artikel ini ?</p>
+                                        <div className="flex gap-3 mt-3">
+                                            <button className='bg-black py-1 px-2 rounded-md text-white' onClick={closeModal} >Yes</button>
+                                            <button className='bg-red py-1 px-2 rounded-md text-white' onClick={closeModal} >Close</button>
+                                        </div>
                                     </Modal>
                                 </div>
                             </>
