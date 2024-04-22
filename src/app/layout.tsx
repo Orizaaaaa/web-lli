@@ -18,7 +18,7 @@ export default function RootLayout({
     <ReduxProvider>
       <html lang="en">
         <body className={`${inter.className}`}>
-          <div className="dark:bg-boxdark-2 dark:text-bodydark">
+          <div className="parent dark:bg-boxdark-2 dark:text-bodydark">
             {children}
           </div>
         </body>
