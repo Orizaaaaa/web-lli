@@ -8,6 +8,7 @@ import Title from '@/components/fragemnts/title';
 import ButtonPrimary from '@/components/elements/buttonPrimary';
 import About from '@/organism/about';
 import Footer from '@/organism/footer';
+import Link from 'next/link';
 
 
 const AllNews = () => {
@@ -71,8 +72,10 @@ const AllNews = () => {
                     <div className="grid grid-cols-2 sm:grid-cols-3 gap-3 mt-8">
                         {datahero3.map((item, index) => (
                             <div key={index}>
-                                <Image className='w-full' src={item.image} alt='news_btm' />
-                                <p className='text-sm md:text-base' >{item.title}</p>
+                                <Link href='/all_news/detail_news'>
+                                    <Image className='w-full' src={item.image} alt='news_btm' />
+                                    <p className='text-sm md:text-base' >{item.title}</p>
+                                </Link>
                             </div>
                         ))}
                     </div>
