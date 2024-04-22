@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import "../css/globals.css";
-import { inter } from "../utils/font";
+import { inter } from "@/utils/font";
 import { ReduxProvider } from "@/redux/provider";
 
 
@@ -18,7 +18,7 @@ export default function RootLayout({
     <ReduxProvider>
       <html lang="en">
         <body className={`${inter.className}`}>
-          <div className="parent dark:bg-boxdark-2 dark:text-bodydark">
+          <div className=" dark:bg-boxdark-2 dark:text-bodydark">
             {children}
           </div>
         </body>
