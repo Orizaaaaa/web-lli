@@ -9,10 +9,9 @@ import Head from 'next/head';
 const JoditEditor = dynamic(() => import("jodit-react"), { ssr: false });
 
 
-const TextEditor = () => {
+const TextEditor = ({ desc }: any) => {
     const editor = useRef(null); //declared a null value 
-    const [content, setContent] = useState("");
-    console.log(content);
+    const [content, setContent] = useState(desc);
     //declare using state
 
     /* The most important point*/
