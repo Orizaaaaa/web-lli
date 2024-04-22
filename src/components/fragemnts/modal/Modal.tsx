@@ -23,9 +23,9 @@ const Modal: FC<ModalProps> = ({ isOpen, children, className }) => {
     }
 
     return (
-        <dialog id="my_modal_5" className="modal modal-bottom sm:modal-middle">
-            <div className="modal-box">
-                <div className={`modal-action ${className}`}>
+        <dialog id="my_modal_5" className="modal rounded-md modal-bottom sm:modal-middle">
+            <div className="modal-box  ">
+                <div className={`modal-action p-3 ${className}`}>
                     {children}
                 </div>
             </div>
