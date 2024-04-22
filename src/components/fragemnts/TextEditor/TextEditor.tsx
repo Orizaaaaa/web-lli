@@ -46,7 +46,7 @@ const TextEditor = ({ desc }: any) => {
                             value={content}         //This is important
                             config={config}         //Only use when you declare some custom configs
                             onChange={handleChange} //handle the changes
-                            className="w-full h-[70%]  bg-white"
+                            className="w-full h-[70%] text-black bg-white"
                         />
                         <style>
                             {`.jodit-wysiwyg{height:300px !important}`}

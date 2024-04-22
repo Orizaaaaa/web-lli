@@ -5,9 +5,12 @@ import DefaultLayout from '@/components/layouts/DefaultLayout'
 import { BsThreeDots } from "react-icons/bs";
 import Modal from '@/components/fragemnts/modal/Modal';
 import { useState } from 'react';
+import { useRouter } from 'next/navigation';
+
 
 
 const AllNewsAdmin = () => {
+    const router: any = useRouter()
     const [modalIsOpen, setModalIsOpen] = useState(false);
     const datahero3 = [
         {
@@ -34,6 +37,14 @@ const AllNewsAdmin = () => {
         setModalIsOpen(false);
     };
 
+    const handleUpdate = () => {
+        router.push('/update_article');
+    };
+
+
+    const handleDetail = () => {
+        router.push('/all_news/detail_news')
+    }
 
 
     return (
@@ -41,7 +52,7 @@ const AllNewsAdmin = () => {
             <section className='news mb-12' id='news' >
                 <div className="container mx-auto px-2 lg:p-0">
                     <div className="flex justify-between border-b-2 border-gray-300 py-5  md:mx-0">
-                        <h1 className='font-bold text-xl md:text-2xl' >Berita Terbaru</h1>
+                        <h1 className='font-bold text-xl md:text-2xl' >Semua Berita</h1>
                     </div>
                     {/* hero 2 bottom*/}
                     <div className="grid grid-cols-2 sm:grid-cols-3 gap-3 mt-8">
@@ -58,11 +69,11 @@ const AllNewsAdmin = () => {
                                     </button> */}
 
                                     <div className="button-action mt-3 grid gap-2 grid-cols-2 text-sm md:text-base md:grid-cols-3 justify-between">
-                                        <button className='update bg-black rounded-md py-1 px-2 text-white'>
+                                        <button className='update bg-black rounded-md py-1 px-2 text-white' onClick={handleUpdate}>
                                             Update
                                         </button>
 
-                                        <button className='update bg-black rounded-md py-1 px-2 text-white'>
+                                        <button className='update bg-black rounded-md py-1 px-2 text-white' onClick={handleDetail}>
                                             Detail
                                         </button>
 
