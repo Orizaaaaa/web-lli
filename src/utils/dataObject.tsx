@@ -1,6 +1,5 @@
 'use client'
 
-import { IoEyeOutline } from "react-icons/io5";
 
 
 export const navigation = [
