@@ -1,6 +1,6 @@
 'use client'
 
-import { FC } from "react";
+import { FC, useEffect } from "react";
 
 interface ModalProps {
     isOpen: boolean;
@@ -8,21 +8,20 @@ interface ModalProps {
     className?: string
 }
 
-
 const Modal: FC<ModalProps> = ({ isOpen, children, className }) => {
-
-    if (isOpen) {
-        const modal = document.getElementById('my_modal_5');
-        if (modal instanceof HTMLDialogElement) {
-            modal.showModal();
+    useEffect(() => {
+        if (isOpen) {
+            const modal = document.getElementById('my_modal_5');
+            if (modal instanceof HTMLDialogElement) {
+                modal.showModal();
+            }
+        } else {
+            const modal = document.getElementById('my_modal_5');
+            if (modal instanceof HTMLDialogElement) {
+                modal.close();
+            }
         }
-    } else {
-        const modal = document.getElementById('my_modal_5');
-        if (modal instanceof HTMLDialogElement) {
-            modal.close();
-
-        }
-    }
+    }, [isOpen]);
 
     return (
         <dialog id="my_modal_5" className="modal rounded-md modal-bottom sm:modal-middle">
@@ -35,4 +34,4 @@ const Modal: FC<ModalProps> = ({ isOpen, children, className }) => {
     )
 }
 
-export default Modal
+export default Modal;

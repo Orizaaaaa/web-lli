@@ -1,4 +1,5 @@
 'use client'
+
 import { image1, image2, image3 } from '../image'
 import Image from 'next/image'
 import DefaultLayout from '@/components/layouts/DefaultLayout'
@@ -80,7 +81,7 @@ const AllNewsAdmin = () => {
                                     <Modal isOpen={modalIsOpen} >
                                         <p>Apakah anda yakin akan menghapus artikel ini ?</p>
                                         <div className="flex gap-3 mt-3">
-                                            <button className='bg-black py-1 px-2 rounded-md text-white' onClick={closeModal} >Yes</button>
+                                            <button className='bg-black py-1 px-2 rounded-md text-white'  >Yes</button>
                                             <button className='bg-red py-1 px-2 rounded-md text-white' onClick={closeModal} >Close</button>
                                         </div>
                                     </Modal>
