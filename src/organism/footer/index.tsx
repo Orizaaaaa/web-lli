@@ -1,6 +1,5 @@
 import { bigLogo } from '@/app/image'
 import Image from 'next/image'
-import React from 'react'
 
 
 const Footer = () => {
