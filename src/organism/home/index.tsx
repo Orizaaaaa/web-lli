@@ -1,7 +1,10 @@
+'use client'
 import Navbar from '@/components/fragemnts/navbar'
 import './home.scss'
 import React from 'react'
 import ButtonPrimary from '@/components/elements/buttonPrimary'
+import ChartOne from '@/components/fragemnts/Charts/ChartOne'
+import ChartTwo from '@/components/fragemnts/Charts/ChartTwo'
 
 
 const Home = () => {
@@ -9,6 +12,8 @@ const Home = () => {
         <section className="home" id='home'>
             <Navbar />
             <div className="hero1 ">
+                {/* <ChartOne /> */}
+
                 <div className="container mx-auto min-h-[80vh] mt-10 md:mt-[90px] flex flex-col justify-center gap-10 lg:gap-28 ">
                     <div className='p-5 md:0' >
                         <h1 className='font-bold text-2xl sm:text-4xl md:text-5xl text-white' >Lembaga Lansia Indonesia <br /> Jawa Barat</h1>

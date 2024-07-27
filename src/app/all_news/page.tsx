@@ -26,6 +26,9 @@ const AllNews = () => {
             title: 'Lorem Ipsum is simply dummy text of the.'
         }
     ]
+
+
+
     return (
         <>
             <section className="home" id='home'>
